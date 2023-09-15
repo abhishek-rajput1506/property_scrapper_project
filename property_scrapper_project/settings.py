@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'property_scrapper.apps.PropertyScrapperConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -81,6 +82,7 @@ DATABASES = {
 }
 
 
+MONGO_URI = "mongodb+srv://abrajput119:kQ77OENRAgFyqs7B@cluster0.mrz6cjj.mongodb.net/?retryWrites=true&w=majority"
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
