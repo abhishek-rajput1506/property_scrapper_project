@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 CRONJOBS = [
-    ('1 * * * *', 'django.core.management.scrapping_script', ['clearsessions']),
+    ('0 9,21 * * *', 'property_scrapper.cron.my_scheduled_job')
 ]
 # Application definition
 
