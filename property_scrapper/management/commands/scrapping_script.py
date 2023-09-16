@@ -9,7 +9,7 @@ class Command(BaseCommand):
     def __init__(self):
         self.cities_list = ['delhi', 'pune', 'mumbai', 'lucknow', 'agra', 'ahmedabad', 'kolkata', 'jaipur', 'chennai', 'bengaluru']
 
-    def handle(self, *args, **options):
+    def handle(self, **options):
         scrapper = Scrapper()
         scrapper.run_scrapper(self.cities_list)
     

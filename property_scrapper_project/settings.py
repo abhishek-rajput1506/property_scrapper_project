@@ -27,13 +27,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+CRONJOBS = [
+    ('0 9,21 * * *', 'property_scrapper.cron.my_scheduled_job')
+]
 # Application definition
 
 INSTALLED_APPS = [
     'property_scrapper.apps.PropertyScrapperConfig',
     'django.contrib.admin',
     'django.contrib.auth',
+    'django_crontab',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
