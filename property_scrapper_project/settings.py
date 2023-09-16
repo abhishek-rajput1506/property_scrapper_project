@@ -27,13 +27,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+CRONJOBS = [
+    ('1 * * * *', 'django.core.management.scrapping_script', ['clearsessions']),
+]
 # Application definition
 
 INSTALLED_APPS = [
     'property_scrapper.apps.PropertyScrapperConfig',
     'django.contrib.admin',
     'django.contrib.auth',
+    'django_crontab',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
