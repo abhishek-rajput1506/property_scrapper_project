@@ -54,11 +54,3 @@ The cron job is now set up to run the scraping script twice a day.
 - The MongoDB URI for data storage can be found in `mongo_uri.txt`.
 - You can configure the list of cities and other parameters in the scraping script file.
 
-
-
-## Acknowledgments
-
-- The scraping script is based on the 99 Acres website.
-- Special thanks to the open-source community for their contributions.
-
-Feel free to contribute to this project and improve the data scraping capabilities or add more features!
